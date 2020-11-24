@@ -5,18 +5,9 @@
     box-sizing: border-box;
 }
 
-input, button {
+#password, #make {
     padding: .25rem .5rem;
-    border: none;
-    outline: none;
-    border-radius: 0;
-    background: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent;
-    color: inherit;
-    font-size: 1rem;
+    display: inline-block;
 }
 
 html, body {
@@ -38,12 +29,11 @@ main {
     justify-content: center;
 }
 
-input {
-    width: 20rem;
+#password {
     border: solid 1px #ffffff;
 }
 
-button {
+#make {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
     border-right: solid 1px #ffffff;
