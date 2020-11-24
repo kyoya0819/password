@@ -9,7 +9,7 @@ const target = document.getElementById('password');
 
 function random_string()
 {
-    return Array.from(crypto.getRandomValues(new Uint8Array(L))).map((n)=>S[n%S.length]).join('');
+    return Array.from(crypto.getRandomValues(new Uint32Array(L))).map((n)=>S[n%S.length]).join('');
 }
 
 document.getElementById('make').onclick = function()
