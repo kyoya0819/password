@@ -9,10 +9,9 @@ function random_string()
 
 function make()
 {
-    alert('moving');
     target.innerHTML = random_string() + "-" + random_string() + "-" + random_string();
 }
 
 
-window.onload = make();
-document.getElementById('make').onclick = make();
+window.onload = make;
+document.getElementById('make').onclick = make;
