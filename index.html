@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<input type="text" id="password" onfocus="this.select();" />
+<button id="make">Make</button>
+<script>
+const S = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const L = 6;
+const target = document.getElementById('password');
+
+function random_string()
+{
+    return Array.from(crypto.getRandomValues(new Uint8Array(L))).map((n)=>S[n%S.length]).join('');
+}
+
+document.getElementById('make').onclick = function()
+{
+    target.value = random_string() + "-" + random_string() + "-" + random_string();
+};
+</script>
