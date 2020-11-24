@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-#password, #make {
+#password, #make, #copy {
     padding: .25rem .5rem;
     display: inline-block;
 }
