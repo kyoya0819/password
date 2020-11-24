@@ -9,17 +9,10 @@ function random_string()
 
 function make()
 {
+    alert('moving');
     target.innerHTML = random_string() + "-" + random_string() + "-" + random_string();
 }
 
-try {
-    window.onload = make();
-    document.getElementById('make').onclick = make();
-}
-catch (exc) {
-    alert(exc);
-}
-/*
+
 window.onload = make();
 document.getElementById('make').onclick = make();
-*/
