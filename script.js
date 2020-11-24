@@ -9,5 +9,5 @@ function random_string()
 
 document.getElementById('make').onclick = function()
 {
-    target.value = random_string() + "-" + random_string() + "-" + random_string();
+    target.innerHTML = random_string() + "-" + random_string() + "-" + random_string();
 };
