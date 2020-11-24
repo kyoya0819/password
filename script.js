@@ -24,3 +24,4 @@ function copy()
 
 window.onload = make;
 document.getElementById('make').onclick = make;
+document.getElementById('copy').onclick = copy;
