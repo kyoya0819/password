@@ -22,6 +22,15 @@ function copy()
     text.remove();
 }
 
+function select()
+{
+    let range = document.createRange();
+    range.selectNode(document.getElementById('password'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+}
+
 window.onload = make;
 document.getElementById('make').onclick = make;
 document.getElementById('copy').onclick = copy;
+document.getElementById('password').onclick = select;
