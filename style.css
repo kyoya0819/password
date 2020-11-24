@@ -33,7 +33,7 @@ main {
     border: solid 1px #ffffff;
 }
 
-#make {
+#make, #copy {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
     border-right: solid 1px #ffffff;
