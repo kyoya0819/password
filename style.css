@@ -46,3 +46,7 @@ button {
     border-bottom: solid 1px #ffffff;
     border-right: solid 1px #ffffff;
 }
+
+#inputs {
+    margin-top: 1rem;
+}
