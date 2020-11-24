@@ -12,6 +12,15 @@ function make()
     target.innerHTML = random_string() + "-" + random_string() + "-" + random_string();
 }
 
+function copy()
+{
+    let text = document.createElement("textarea");
+    text.value = target.innerText;
+    document.body.appendChild(text);
+    text.select();
+    document.execCommand("copy");
+    text.remove();
+}
 
 window.onload = make;
 document.getElementById('make').onclick = make;
