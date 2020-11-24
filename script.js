@@ -7,7 +7,10 @@ function random_string()
     return Array.from(crypto.getRandomValues(new Uint32Array(L))).map((n)=>S[n%S.length]).join('');
 }
 
-document.getElementById('make').onclick = function()
+function make()
 {
     target.innerHTML = random_string() + "-" + random_string() + "-" + random_string();
-};
+}
+
+window.onload = make();
+document.getElementById('make').onclick = make();
