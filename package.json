@@ -1,0 +1,21 @@
+{
+    "name": "password",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "node compile.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kyoya0819/password.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kyoya0819/password/issues"
+    },
+    "homepage": "https://github.com/kyoya0819/password#readme",
+    "dependencies": {
+        "html-minifier": "^4.0.0"
+    }
+}
