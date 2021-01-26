@@ -44,3 +44,25 @@ main {
 #inputs {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 750px) {
+    
+    #inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-contents: center;
+    }
+    
+    #password {
+        display: block;
+        width: 100%;
+    }
+    
+    #copy {
+        border-left: solid 1px #ffffff;
+    }
+    
+    #copy, #make {
+        margin-top: .5rem;
+    }
+}
