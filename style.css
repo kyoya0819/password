@@ -50,7 +50,7 @@ main {
     #inputs {
         display: flex;
         flex-wrap: wrap;
-        justify-contents: center;
+        justify-content: center;
     }
     
     #password {
