@@ -20,6 +20,12 @@ function copy()
     text.select();
     document.execCommand("copy");
     text.remove();
+
+    document.getElementById('success').classList.add('active');
+
+    setTimeout(() => {
+        document.getElementById('success').classList.remove('active');
+    }, 2000);
 }
 
 function select()

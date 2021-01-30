@@ -36,6 +36,7 @@ main {
 
 #make, #copy {
     user-select: none;
+    cursor: pointer;
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
     border-right: solid 1px #ffffff;
@@ -43,6 +44,22 @@ main {
 
 #inputs {
     margin-top: 1rem;
+}
+
+#success {
+    position: fixed;
+    padding: .5rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+    background: #000;
+    color: #FFF;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom .35s;
+}
+
+#success.active {
+    bottom: 0;
 }
 
 @media screen and (max-width: 750px) {
