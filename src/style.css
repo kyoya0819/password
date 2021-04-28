@@ -32,6 +32,7 @@ main {
 
 #password {
     border: solid 1px #ffffff;
+    font-family: "Roboto Mono", sans-serif;
 }
 
 #make, #copy {
@@ -44,6 +45,8 @@ main {
 
 #inputs {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 #success {
