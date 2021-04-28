@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+}
+
 #password, #make, #copy {
     padding: .5rem 1rem;
     display: inline-block;

@@ -6,8 +6,8 @@ fs.readFile('./src/index.html', 'UTF-8', (err, html) => {
     if (err)
         throw err;
 
-    const css = fs.readFileSync('./src/style.css', 'UTF-8');
-    const js  = fs.readFileSync('./src/script.js', 'UTF-8');
+    const css = fs.readFileSync('./src/style.css');
+    const js  = fs.readFileSync('./src/script.js');
 
     html = html.replace(/<!-- CSS -->/g, '<style>' + css + '</style>');
     html = html.replace(/<!-- JavaScript -->/g, '<script>' + js + '</script>');
